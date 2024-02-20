@@ -25,3 +25,8 @@ enum SFSymbolsImage {
     static let commentOnPost = Image(systemName: "bubble.right")
     static let sharePost = Image(systemName: "paperplane")
 }
+
+enum Placeholder {
+    static let avatarPlaceholder = Image(.avatarPlaceholder)
+    static let imagePlaceholder = Image(.imagePlaceholder)
+}
