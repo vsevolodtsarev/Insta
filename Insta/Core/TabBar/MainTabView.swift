@@ -22,7 +22,7 @@ struct MainTabView: View {
             Text("Notifications")
                 .tabItem { SFSymbolsImage.notifications }
             
-            Text("Profile")
+            ProfileView()
                 .tabItem { SFSymbolsImage.profile }
         }
     }
