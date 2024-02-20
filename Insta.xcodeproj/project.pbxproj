@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1351511C2B84A9C6001621A0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1351511B2B84A9C6001621A0 /* Localizable.xcstrings */; };
+		1351511F2B84AA63001621A0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1351511E2B84AA63001621A0 /* Errors.swift */; };
+		135151212B84AAF8001621A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135151202B84AAF8001621A0 /* Constants.swift */; };
 		137BBA4E2B7F815E002B0EC7 /* InstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137BBA4D2B7F815E002B0EC7 /* InstaApp.swift */; };
-		137BBA502B7F815E002B0EC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137BBA4F2B7F815E002B0EC7 /* ContentView.swift */; };
+		137BBA502B7F815E002B0EC7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137BBA4F2B7F815E002B0EC7 /* RootView.swift */; };
 		137BBA522B7F815F002B0EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137BBA512B7F815F002B0EC7 /* Assets.xcassets */; };
 		137BBA552B7F815F002B0EC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137BBA542B7F815F002B0EC7 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1351511B2B84A9C6001621A0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1351511E2B84AA63001621A0 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		135151202B84AAF8001621A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		137BBA4A2B7F815E002B0EC7 /* Insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137BBA4D2B7F815E002B0EC7 /* InstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaApp.swift; sourceTree = "<group>"; };
-		137BBA4F2B7F815E002B0EC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		137BBA4F2B7F815E002B0EC7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		137BBA512B7F815F002B0EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		137BBA542B7F815F002B0EC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +38,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1351510E2B84A6EE001621A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				137BBA532B7F815F002B0EC7 /* Preview Content */,
+				137BBA512B7F815F002B0EC7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1351510F2B84A71E001621A0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				137BBA4D2B7F815E002B0EC7 /* InstaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		135151102B84A728001621A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		135151112B84A72F001621A0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		135151122B84A735001621A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		135151132B84A813001621A0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				135151142B84A8B1001621A0 /* Root */,
+				135151152B84A8CF001621A0 /* Authentication */,
+				135151162B84A8D6001621A0 /* Feed */,
+				135151182B84A8E2001621A0 /* Profile */,
+				135151172B84A8DD001621A0 /* Search */,
+				135151192B84A92C001621A0 /* TabBar */,
+				1351511A2B84A932001621A0 /* UploadPost */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		135151142B84A8B1001621A0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				137BBA4F2B7F815E002B0EC7 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		135151152B84A8CF001621A0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		135151162B84A8D6001621A0 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		135151172B84A8DD001621A0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		135151182B84A8E2001621A0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		135151192B84A92C001621A0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1351511A2B84A932001621A0 /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
+		1351511D2B84A9F7001621A0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1351511B2B84A9C6001621A0 /* Localizable.xcstrings */,
+				1351511E2B84AA63001621A0 /* Errors.swift */,
+				135151202B84AAF8001621A0 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		137BBA412B7F815E002B0EC7 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +169,13 @@
 		137BBA4C2B7F815E002B0EC7 /* Insta */ = {
 			isa = PBXGroup;
 			children = (
-				137BBA4D2B7F815E002B0EC7 /* InstaApp.swift */,
-				137BBA4F2B7F815E002B0EC7 /* ContentView.swift */,
-				137BBA512B7F815F002B0EC7 /* Assets.xcassets */,
-				137BBA532B7F815F002B0EC7 /* Preview Content */,
+				1351510F2B84A71E001621A0 /* App */,
+				1351510E2B84A6EE001621A0 /* Resources */,
+				135151122B84A735001621A0 /* Extensions */,
+				1351511D2B84A9F7001621A0 /* Utilities */,
+				135151112B84A72F001621A0 /* Services */,
+				135151102B84A728001621A0 /* Model */,
+				135151132B84A813001621A0 /* Core */,
 			);
 			path = Insta;
 			sourceTree = "<group>";
@@ -109,6 +230,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 137BBA412B7F815E002B0EC7;
 			productRefGroup = 137BBA4B2B7F815E002B0EC7 /* Products */;
@@ -127,6 +249,7 @@
 			files = (
 				137BBA552B7F815F002B0EC7 /* Preview Assets.xcassets in Resources */,
 				137BBA522B7F815F002B0EC7 /* Assets.xcassets in Resources */,
+				1351511C2B84A9C6001621A0 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				137BBA502B7F815E002B0EC7 /* ContentView.swift in Sources */,
+				137BBA502B7F815E002B0EC7 /* RootView.swift in Sources */,
+				1351511F2B84AA63001621A0 /* Errors.swift in Sources */,
 				137BBA4E2B7F815E002B0EC7 /* InstaApp.swift in Sources */,
+				135151212B84AAF8001621A0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,15 +396,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Insta/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Insta/Resources/Preview\\ Content";
 				DEVELOPMENT_TEAM = LRWQUTLHSS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +412,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.vsevolodtsarev.Insta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,15 +429,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Insta/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Insta/Resources/Preview\\ Content";
 				DEVELOPMENT_TEAM = LRWQUTLHSS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +445,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.vsevolodtsarev.Insta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
