@@ -13,7 +13,7 @@ struct MainTabView: View {
             FeedView()
                 .tabItem { SFSymbolsImage.feed }
             
-            Text("Search")
+            SearchView()
                 .tabItem { SFSymbolsImage.search }
             
             Text("Upload Post")
