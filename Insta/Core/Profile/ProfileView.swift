@@ -24,7 +24,7 @@ struct ProfileView: View {
                         
                         // Avatar and stats
                         HStack {
-                            Image(.placeholderAvatar)
+                            AppImages.avatarPlaceholder
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 80, height: 80)
@@ -74,7 +74,7 @@ struct ProfileView: View {
                     LazyVGrid(columns: gridItems, spacing: 1) {
                         
                         ForEach(0 ... 15, id: \.self ) { index in
-                            Image(.test)
+                            AppImages.imagePlaceholder
                                 .resizable()
                                 .scaledToFill()
                         }

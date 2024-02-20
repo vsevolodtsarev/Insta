@@ -13,7 +13,7 @@ struct FeedCell: View {
             
             // Image + Username
             HStack {
-                Image(.placeholderAvatar)
+                AppImages.avatarPlaceholder
                     .resizable()
                     .scaledToFill()
                     .frame(width: 40, height: 40)
@@ -29,7 +29,7 @@ struct FeedCell: View {
             .padding(.leading, 8)
             
             // Post image
-            Image(.test)
+            AppImages.imagePlaceholder
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
