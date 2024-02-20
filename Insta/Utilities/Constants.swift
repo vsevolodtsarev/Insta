@@ -16,4 +16,7 @@ enum SFSymbolsImage {
     static let uploadPost = Image(systemName: "plus.square")
     static let notifications = Image(systemName: "heart")
     static let profile = Image(systemName: "person")
+    
+    //Profile
+    static let toolbarItem = Image(systemName: "line.3.horizontal")
 }
