@@ -11,6 +11,8 @@
 		1351511F2B84AA63001621A0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1351511E2B84AA63001621A0 /* Errors.swift */; };
 		135151212B84AAF8001621A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135151202B84AAF8001621A0 /* Constants.swift */; };
 		135151232B84ACAA001621A0 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135151222B84ACAA001621A0 /* MainTabView.swift */; };
+		135151252B84B40B001621A0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135151242B84B40B001621A0 /* ProfileView.swift */; };
+		135151282B84C1D1001621A0 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135151272B84C1D1001621A0 /* UserStatView.swift */; };
 		137BBA4E2B7F815E002B0EC7 /* InstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137BBA4D2B7F815E002B0EC7 /* InstaApp.swift */; };
 		137BBA502B7F815E002B0EC7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137BBA4F2B7F815E002B0EC7 /* RootView.swift */; };
 		137BBA522B7F815F002B0EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137BBA512B7F815F002B0EC7 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		1351511E2B84AA63001621A0 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		135151202B84AAF8001621A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		135151222B84ACAA001621A0 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		135151242B84B40B001621A0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		135151272B84C1D1001621A0 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		137BBA4A2B7F815E002B0EC7 /* Insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137BBA4D2B7F815E002B0EC7 /* InstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaApp.swift; sourceTree = "<group>"; };
 		137BBA4F2B7F815E002B0EC7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		135151132B84A813001621A0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				135151262B84C183001621A0 /* Components */,
 				135151142B84A8B1001621A0 /* Root */,
 				135151152B84A8CF001621A0 /* Authentication */,
 				135151162B84A8D6001621A0 /* Feed */,
@@ -124,6 +129,7 @@
 		135151182B84A8E2001621A0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				135151242B84B40B001621A0 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -151,6 +157,14 @@
 				135151202B84AAF8001621A0 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		135151262B84C183001621A0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				135151272B84C1D1001621A0 /* UserStatView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		137BBA412B7F815E002B0EC7 = {
@@ -266,7 +280,9 @@
 				137BBA502B7F815E002B0EC7 /* RootView.swift in Sources */,
 				1351511F2B84AA63001621A0 /* Errors.swift in Sources */,
 				137BBA4E2B7F815E002B0EC7 /* InstaApp.swift in Sources */,
+				135151282B84C1D1001621A0 /* UserStatView.swift in Sources */,
 				135151212B84AAF8001621A0 /* Constants.swift in Sources */,
+				135151252B84B40B001621A0 /* ProfileView.swift in Sources */,
 				135151232B84ACAA001621A0 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
