@@ -59,7 +59,7 @@ struct ProfileView: View {
                             print("To edit profile")
                         }
                         .overlay(
-                            RoundedRectangle(cornerRadius: 6)
+                            RoundedRectangle(cornerRadius: 10)
                                 .stroke(.gray, lineWidth: 1))
                         
                         Divider()
