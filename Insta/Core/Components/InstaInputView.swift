@@ -19,19 +19,11 @@ struct InstaInputView: View {
             if isSecureField {
                 if isShowSecureText {
                     TextField(placeholder, text: $text)
-                        .font(.subheadline)
-                        .padding(12)
-                        .frame(height: 50)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
+                        .instaTextFieldModifier()
                         
                 } else {
                     SecureField(placeholder, text: $text)
-                        .font(.subheadline)
-                        .padding(12)
-                        .frame(height: 50)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
+                        .instaTextFieldModifier()
                      
                 }
                 
@@ -46,11 +38,7 @@ struct InstaInputView: View {
                 
             } else {
                 TextField(placeholder, text: $text)
-                    .font(.subheadline)
-                    .padding(12)
-                    .frame(height: 50)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
+                    .instaTextFieldModifier()
             }
         }
     }
