@@ -9,8 +9,12 @@ import SwiftUI
 
 struct LoginVIew: View {
     var body: some View {
-        VStack {
-            
+        NavigationStack {
+            VStack {
+                
+                //Image Logo
+                AppImages.logo
+            }
         }
     }
 }
