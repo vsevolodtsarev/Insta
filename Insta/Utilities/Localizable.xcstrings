@@ -11,6 +11,16 @@
         }
       }
     },
+    "Confirm your password" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подтвердите пароль"
+          }
+        }
+      }
+    },
     "Continue with Apple" : {
       "localizations" : {
         "ru" : {
@@ -27,6 +37,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Продолжить с Google"
+          }
+        }
+      }
+    },
+    "Create password" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создайте пароль"
           }
         }
       }
@@ -67,6 +87,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Введите email"
+          }
+        }
+      }
+    },
+    "Enter your password" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите пароль"
           }
         }
       }
@@ -217,6 +247,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Этот email будет использоваться для входа в аккаунт"
+          }
+        }
+      }
+    },
+    "Your password must be at least 6 characters in lenght" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пароль должен содержать не менее 6 символов"
           }
         }
       }

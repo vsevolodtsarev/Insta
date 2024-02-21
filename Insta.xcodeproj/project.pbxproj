@@ -26,7 +26,7 @@
 		137BBA552B7F815F002B0EC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137BBA542B7F815F002B0EC7 /* Preview Assets.xcassets */; };
 		13F2A1C72B86629F00164261 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1C62B86629F00164261 /* AddEmailView.swift */; };
 		13F2A1C92B866B1F00164261 /* CreateUsernameVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */; };
-		13F2A1CB2B86738500164261 /* CreatePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1CA2B86738500164261 /* CreatePassword.swift */; };
+		13F2A1CB2B86738500164261 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1CA2B86738500164261 /* CreatePasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +50,7 @@
 		137BBA542B7F815F002B0EC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		13F2A1C62B86629F00164261 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameVIew.swift; sourceTree = "<group>"; };
-		13F2A1CA2B86738500164261 /* CreatePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePassword.swift; sourceTree = "<group>"; };
+		13F2A1CA2B86738500164261 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 				1351512F2B86289C001621A0 /* LoginView.swift */,
 				13F2A1C62B86629F00164261 /* AddEmailView.swift */,
 				13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */,
-				13F2A1CA2B86738500164261 /* CreatePassword.swift */,
+				13F2A1CA2B86738500164261 /* CreatePasswordView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				137BBA4E2B7F815E002B0EC7 /* InstaApp.swift in Sources */,
 				135151282B84C1D1001621A0 /* UserStatView.swift in Sources */,
 				135151342B863399001621A0 /* InstaInputView.swift in Sources */,
-				13F2A1CB2B86738500164261 /* CreatePassword.swift in Sources */,
+				13F2A1CB2B86738500164261 /* CreatePasswordView.swift in Sources */,
 				135151322B862BDE001621A0 /* InstaButtonView.swift in Sources */,
 				135151212B84AAF8001621A0 /* Constants.swift in Sources */,
 				135151252B84B40B001621A0 /* ProfileView.swift in Sources */,
