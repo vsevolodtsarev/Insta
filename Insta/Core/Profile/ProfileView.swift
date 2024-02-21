@@ -55,10 +55,9 @@ struct ProfileView: View {
                         
                         // Edit Profile button
                         InstaButtonView(text: "Edit Profile",
-                                        isAuthButton: false,
-                                        action: .constant {
+                                        isAuthButton: false) {
                             print("To edit profile")
-                        })
+                        }
                         .overlay(
                             RoundedRectangle(cornerRadius: 6)
                                 .stroke(.gray, lineWidth: 1))

@@ -10,7 +10,7 @@ import SwiftUI
 struct InstaButtonView: View {
     let text: String
     let isAuthButton: Bool
-    @Binding var action: () -> ()
+    let action: () -> ()
     
     var body: some View {
         Button(action: {
@@ -20,17 +20,19 @@ struct InstaButtonView: View {
             Text(text)
                 .font(.subheadline)
                 .fontWeight(.semibold)
-                .frame(width: 360, height: 32)
+                .frame(width: !isAuthButton ? 360 : 345,
+                       height: !isAuthButton ? 32 : 50)
                 .background(!isAuthButton ? .clear : .blue)
                 .foregroundStyle(!isAuthButton ? .accent : .white)
-                .cornerRadius(6)
+                .cornerRadius(10)
         })
       
     }
 }
 
 #Preview {
-    InstaButtonView(text: "InstaButtonView", isAuthButton: true, action: .constant {
-        print("pushed")
-    })
+    InstaButtonView(text: "InstaButtonView", isAuthButton: true
+    ) {
+        print("test")
+    }
 }
