@@ -1,6 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Add your email" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Укажите ваш email"
+          }
+        }
+      }
+    },
     "Continue with Apple" : {
       "localizations" : {
         "ru" : {
@@ -67,6 +77,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Забыли пароль?"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Далее"
           }
         }
       }
@@ -157,6 +177,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Новая публикация"
+          }
+        }
+      }
+    },
+    "You'll use this email to sign in to your account" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этот email будет использоваться для входа в аккаунт"
           }
         }
       }
