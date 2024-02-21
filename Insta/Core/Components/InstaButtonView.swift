@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InstaButtonView: View {
-    let text: String
+    let text: LocalizedStringKey
     let isAuthButton: Bool
     let action: () -> ()
     
@@ -31,7 +31,7 @@ struct InstaButtonView: View {
 }
 
 #Preview {
-    InstaButtonView(text: "InstaButtonView", isAuthButton: true
+    InstaButtonView(text: "Edit Profile", isAuthButton: true
     ) {
         print("test")
     }

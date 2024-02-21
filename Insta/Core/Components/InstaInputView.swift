@@ -11,7 +11,7 @@ struct InstaInputView: View {
     @Binding var text: String
     @State private var isShowSecureText = false
     
-    let placeholder: String
+    let placeholder: LocalizedStringKey
     let isSecureField: Bool
     
     var body: some View {
@@ -45,5 +45,5 @@ struct InstaInputView: View {
 }
 
 #Preview {
-    InstaInputView(text: .constant(""), placeholder: "Placeholder text", isSecureField: true)
+    InstaInputView(text: .constant(""), placeholder: "Enter your email", isSecureField: true)
 }
