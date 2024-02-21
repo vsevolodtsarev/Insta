@@ -29,8 +29,6 @@ struct CreateUsernameVIew: View {
                 InstaInputView(text: $username,
                                placeholder: "Enter your username",
                                isSecureField: false)
-                .textInputAutocapitalization(.never)
-                .keyboardType(.emailAddress)
                 .padding(.horizontal, 24)
                 .padding(.top)
                 
@@ -44,8 +42,6 @@ struct CreateUsernameVIew: View {
                     }
                                     .padding(.top)
                 }
-                
-
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
