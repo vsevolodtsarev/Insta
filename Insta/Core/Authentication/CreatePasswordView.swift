@@ -21,7 +21,7 @@ struct CreatePasswordView: View {
                     .fontWeight(.bold)
                     .padding(.top)
                 
-                Text("Your password must be at least 6 characters in lenght")
+                Text("Your password must be at least 6 characters in length")
                     .font(.footnote)
                     .foregroundStyle(.gray)
                     .multilineTextAlignment(.center)
@@ -40,7 +40,7 @@ struct CreatePasswordView: View {
                 
                 
                 NavigationLink(isActive: $isShowMainTabView) {
-                    MainTabView()
+                    CompleteSignUpView()
                         .navigationBarBackButtonHidden()
                 } label: {
                     InstaButtonView(text: "Next",
