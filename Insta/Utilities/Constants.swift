@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 enum SFSymbolsImage {
+    //Toolbar items:
+    static let backButton = Image(systemName: "chevron.left")
     
     // Tab Bar Items:
     static let feed = Image(systemName: "house")
@@ -29,4 +31,7 @@ enum SFSymbolsImage {
 enum AppImages {
     static let avatarPlaceholder = Image(.avatarPlaceholder)
     static let imagePlaceholder = Image(.imagePlaceholder)
+    static let logo = Image(.logo)
+    static let googleLogo = Image(.googleLogo)
+    static let appleLogo = Image(systemName: "apple.logo")
 }

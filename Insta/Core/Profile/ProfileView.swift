@@ -54,18 +54,13 @@ struct ProfileView: View {
                         .padding(.bottom, 4)
                         
                         // Edit Profile button
-                        Button(action: {
-                            print("edit profile")
-                            
-                        }, label: {
-                            Text("Edit Profile")
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                                .frame(width: 360, height: 32)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 6)
-                                        .stroke(.gray, lineWidth: 1))
-                        })
+                        InstaButtonView(text: "Edit Profile",
+                                        isAuthButton: false) {
+                            print("To edit profile")
+                        }
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.gray, lineWidth: 1))
                         
                         Divider()
                     }
