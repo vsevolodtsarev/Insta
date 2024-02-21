@@ -31,6 +31,16 @@
         }
       }
     },
+    "Create username" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создайте имя пользователя"
+          }
+        }
+      }
+    },
     "Don't have an account?" : {
       "localizations" : {
         "ru" : {
@@ -57,6 +67,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Введите email"
+          }
+        }
+      }
+    },
+    "Enter your username" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите имя пользователя"
           }
         }
       }
@@ -117,6 +137,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Введите пароль"
+          }
+        }
+      }
+    },
+    "Pick a username for your new account. You can always change it later" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это имя пользователя для вашего аккаунта. Вы сможете изменить его позже"
           }
         }
       }
