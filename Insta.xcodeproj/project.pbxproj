@@ -27,6 +27,7 @@
 		13F2A1C72B86629F00164261 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1C62B86629F00164261 /* AddEmailView.swift */; };
 		13F2A1C92B866B1F00164261 /* CreateUsernameVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */; };
 		13F2A1CB2B86738500164261 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1CA2B86738500164261 /* CreatePasswordView.swift */; };
+		13F2A1CD2B867AAC00164261 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1CC2B867AAC00164261 /* CompleteSignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		13F2A1C62B86629F00164261 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameVIew.swift; sourceTree = "<group>"; };
 		13F2A1CA2B86738500164261 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
+		13F2A1CC2B867AAC00164261 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				13F2A1C62B86629F00164261 /* AddEmailView.swift */,
 				13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */,
 				13F2A1CA2B86738500164261 /* CreatePasswordView.swift */,
+				13F2A1CC2B867AAC00164261 /* CompleteSignUpView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F2A1C72B86629F00164261 /* AddEmailView.swift in Sources */,
+				13F2A1CD2B867AAC00164261 /* CompleteSignUpView.swift in Sources */,
 				1351512E2B850101001621A0 /* SearchView.swift in Sources */,
 				13F2A1C92B866B1F00164261 /* CreateUsernameVIew.swift in Sources */,
 				1351512A2B84E7D4001621A0 /* FeedView.swift in Sources */,

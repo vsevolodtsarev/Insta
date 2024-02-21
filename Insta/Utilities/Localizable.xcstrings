@@ -11,6 +11,26 @@
         }
       }
     },
+    "Click bellow to complete registration and start using Insta" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подтвердите, чтобы завершить регистрацию и начать пользоваться Insta"
+          }
+        }
+      }
+    },
+    "Complete Sign Up" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завершить регистрацию"
+          }
+        }
+      }
+    },
     "Confirm your password" : {
       "localizations" : {
         "ru" : {
@@ -251,7 +271,7 @@
         }
       }
     },
-    "Your password must be at least 6 characters in lenght" : {
+    "Your password must be at least 6 characters in length" : {
       "localizations" : {
         "ru" : {
           "stringUnit" : {
