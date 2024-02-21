@@ -30,4 +30,5 @@ enum AppImages {
     static let avatarPlaceholder = Image(.avatarPlaceholder)
     static let imagePlaceholder = Image(.imagePlaceholder)
     static let logo = Image(.logo)
+    static let googleLogo = Image(.googleLogo)
 }
