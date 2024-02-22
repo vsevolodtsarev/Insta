@@ -42,7 +42,7 @@ struct SearchView: View {
                 .searchable(text: $searchText, prompt: "Search")
             }
             .navigationDestination(for: User.self, destination: { user in
-                ProfileView()
+                ProfileView(user: user)
             })
             .navigationTitle("Search")
             .navigationBarTitleDisplayMode(.inline)
