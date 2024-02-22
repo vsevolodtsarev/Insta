@@ -29,6 +29,7 @@
 		13F2A1CB2B86738500164261 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1CA2B86738500164261 /* CreatePasswordView.swift */; };
 		13F2A1CD2B867AAC00164261 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1CC2B867AAC00164261 /* CompleteSignUpView.swift */; };
 		13F2A1CF2B87AFAA00164261 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1CE2B87AFAA00164261 /* User.swift */; };
+		13F2A1D12B87BCCE00164261 /* CurrentUserProfileVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1D02B87BCCE00164261 /* CurrentUserProfileVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		13F2A1CA2B86738500164261 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		13F2A1CC2B867AAC00164261 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 		13F2A1CE2B87AFAA00164261 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		13F2A1D02B87BCCE00164261 /* CurrentUserProfileVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				135151242B84B40B001621A0 /* ProfileView.swift */,
+				13F2A1D02B87BCCE00164261 /* CurrentUserProfileVIew.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F2A1C72B86629F00164261 /* AddEmailView.swift in Sources */,
+				13F2A1D12B87BCCE00164261 /* CurrentUserProfileVIew.swift in Sources */,
 				13F2A1CD2B867AAC00164261 /* CompleteSignUpView.swift in Sources */,
 				1351512E2B850101001621A0 /* SearchView.swift in Sources */,
 				13F2A1C92B866B1F00164261 /* CreateUsernameVIew.swift in Sources */,
