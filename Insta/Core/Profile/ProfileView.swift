@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProfileView: View {
+    let user: User
+    
     private let gridItems: [GridItem] = [
         .init(.flexible() ,spacing: 1),
         .init(.flexible() ,spacing: 1),
@@ -15,82 +17,75 @@ struct ProfileView: View {
     ]
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
+        ScrollView {
+            VStack {
+                
+                // Header
                 VStack {
                     
-                    // Header
-                    VStack {
+                    // Avatar and stats
+                    HStack {
+                        Image(user.profileImageUrl ?? "")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
                         
-                        // Avatar and stats
-                        HStack {
-                            AppImages.avatarPlaceholder
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 80, height: 80)
-                                .clipShape(Circle())
+                        HStack(spacing: 8) {
+                            UserStatView(text: "Posts", count: .constant(1))
                             
-                            HStack(spacing: 8) {
-                                UserStatView(text: "Posts", count: .constant(1))
-                                
-                                UserStatView(text: "Followers", count: .constant(2))
-                                
-                                UserStatView(text: "Following", count: .constant(3))
-                                
-                            }
-                        }
-                        
-                        // Name and bio
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(verbatim: "Vsevolod Tsarev")
-                                .font(.footnote)
-                                .fontWeight(.semibold)
+                            UserStatView(text: "Followers", count: .constant(2))
                             
-                            Text(verbatim: "Test description is here")
-                                .font(.footnote)
+                            UserStatView(text: "Following", count: .constant(3))
+                            
                         }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal)
-                        .padding(.bottom, 4)
-                        
-                        // Edit Profile button
-                        InstaButtonView(text: "Edit Profile",
-                                        isAuthButton: false) {
-                            print("To edit profile")
-                        }
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.gray, lineWidth: 1))
-                        
-                        Divider()
                     }
                     
-                    // Post grid view
-                    LazyVGrid(columns: gridItems, spacing: 1) {
+                    // Name and bio
+                    VStack(alignment: .leading, spacing: 4) {
+                        if let fullname = user.fullname {
+                            Text(verbatim: fullname)
+                                .font(.footnote)
+                                .fontWeight(.semibold)
+                        }
                         
-                        ForEach(0 ... 15, id: \.self ) { index in
-                            AppImages.imagePlaceholder
-                                .resizable()
-                                .scaledToFill()
+                        if let bio = user.bio {
+                            Text(verbatim: bio)
+                                .font(.footnote)
                         }
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal)
+                    .padding(.bottom, 4)
+                    
+                    // Edit Profile button
+                    InstaButtonView(text: "Edit Profile",
+                                    isAuthButton: false) {
+                        print("To edit profile")
+                    }
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(.gray, lineWidth: 1))
+                    
+                    Divider()
                 }
-            }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {
-                        
-                    }, label: {
-                        SFSymbolsImage.toolbarItem
-                    })
+                
+                // Post grid view
+                LazyVGrid(columns: gridItems, spacing: 1) {
+                    
+                    ForEach(0 ... 15, id: \.self ) { index in
+                        AppImages.imagePlaceholder
+                            .resizable()
+                            .scaledToFill()
+                    }
                 }
             }
         }
+        .navigationTitle("Profile")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(user: User.MOCK_USERS.first!)
 }
