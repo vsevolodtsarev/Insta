@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132966092B89155F00B3A5D1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132966082B89155F00B3A5D1 /* Post.swift */; };
 		1351511C2B84A9C6001621A0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1351511B2B84A9C6001621A0 /* Localizable.xcstrings */; };
 		1351511F2B84AA63001621A0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1351511E2B84AA63001621A0 /* Errors.swift */; };
 		135151212B84AAF8001621A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135151202B84AAF8001621A0 /* Constants.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		132966082B89155F00B3A5D1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1351511B2B84A9C6001621A0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1351511E2B84AA63001621A0 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		135151202B84AAF8001621A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				13F2A1CE2B87AFAA00164261 /* User.swift */,
+				132966082B89155F00B3A5D1 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				135151282B84C1D1001621A0 /* UserStatView.swift in Sources */,
 				135151342B863399001621A0 /* InstaInputView.swift in Sources */,
 				13F2A1CB2B86738500164261 /* CreatePasswordView.swift in Sources */,
+				132966092B89155F00B3A5D1 /* Post.swift in Sources */,
 				135151322B862BDE001621A0 /* InstaButtonView.swift in Sources */,
 				135151212B84AAF8001621A0 /* Constants.swift in Sources */,
 				135151252B84B40B001621A0 /* ProfileView.swift in Sources */,
