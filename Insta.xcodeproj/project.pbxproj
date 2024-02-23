@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		132966092B89155F00B3A5D1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132966082B89155F00B3A5D1 /* Post.swift */; };
+		1329660B2B89216F00B3A5D1 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1329660A2B89216F00B3A5D1 /* PostGridView.swift */; };
 		1351511C2B84A9C6001621A0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1351511B2B84A9C6001621A0 /* Localizable.xcstrings */; };
 		1351511F2B84AA63001621A0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1351511E2B84AA63001621A0 /* Errors.swift */; };
 		135151212B84AAF8001621A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135151202B84AAF8001621A0 /* Constants.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		132966082B89155F00B3A5D1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1329660A2B89216F00B3A5D1 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		1351511B2B84A9C6001621A0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1351511E2B84AA63001621A0 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		135151202B84AAF8001621A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				135151352B8642A6001621A0 /* TextField + Extension.swift */,
+				1329660A2B89216F00B3A5D1 /* PostGridView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				13F2A1C72B86629F00164261 /* AddEmailView.swift in Sources */,
 				13F2A1D12B87BCCE00164261 /* CurrentUserProfileVIew.swift in Sources */,
+				1329660B2B89216F00B3A5D1 /* PostGridView.swift in Sources */,
 				13F2A1CD2B867AAC00164261 /* CompleteSignUpView.swift in Sources */,
 				1351512E2B850101001621A0 /* SearchView.swift in Sources */,
 				13F2A1C92B866B1F00164261 /* CreateUsernameVIew.swift in Sources */,
