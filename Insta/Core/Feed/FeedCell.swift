@@ -68,7 +68,7 @@ struct FeedCell: View {
             .padding(.top, 4)
             
             // Likes label
-            Text(verbatim: "\(post.likes) likes")
+            Text("\(post.likes) \(String(localized: "Likes"))")
                 .font(.footnote)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .leading)
