@@ -111,6 +111,17 @@
         }
       }
     },
+    "Enter your caption" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите описание"
+          }
+        }
+      }
+    },
     "Enter your email" : {
       "localizations" : {
         "ru" : {
@@ -268,6 +279,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Регистрация"
+          }
+        }
+      }
+    },
+    "Upload" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Опубликовать"
           }
         }
       }
