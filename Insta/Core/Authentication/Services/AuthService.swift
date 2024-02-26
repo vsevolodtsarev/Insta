@@ -10,7 +10,7 @@ import FirebaseAuth
 
 final class AuthService {
     
-    @Published private var userSession: FirebaseAuth.User?
+    @Published var userSession: FirebaseAuth.User?
     
     static let shared = AuthService()
     
