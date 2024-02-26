@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject private var viewModel = LoginViewModel()
     
     var body: some View {
         NavigationStack {
@@ -24,13 +23,13 @@ struct LoginView: View {
                 
                 //Text fields
                 VStack(spacing: 12) {
-                    InstaInputView(text: $email,
+                    InstaInputView(text: $viewModel.email,
                                    placeholder: "Enter your email",
                                    isSecureField: false)
                     .textInputAutocapitalization(.never)
                     .keyboardType(.emailAddress)
                     
-                    InstaInputView(text: $password,
+                    InstaInputView(text: $viewModel.password,
                                    placeholder: "Password",
                                    isSecureField: true)
                 }
@@ -52,7 +51,7 @@ struct LoginView: View {
                 //Log in button
                 InstaButtonView(text: "Sign In",
                                 isAuthButton: true) {
-                    print("logined")
+                    Task { try await viewModel.login() }
                 }
                                 .padding(.vertical)
                 
