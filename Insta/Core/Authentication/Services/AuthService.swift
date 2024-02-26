@@ -18,6 +18,7 @@ final class AuthService {
         userSession = Auth.auth().currentUser
     }
     
+    @MainActor
     func createUser(email: String, password: String, username: String) async throws {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
@@ -27,8 +28,14 @@ final class AuthService {
         }
     }
     
+    @MainActor
     func login(withEmail email: String, password: String) async throws {
-        
+        do {
+            let result = try await Auth.auth().signIn(withEmail: email, password: password)
+            userSession = result.user
+        } catch {
+            print("cant login with error \(error.localizedDescription)")
+        }
     }
     
     func loadUserData() async throws {
@@ -36,6 +43,12 @@ final class AuthService {
     }
     
     func signOut() {
-        
+        do {
+            try Auth.auth().signOut()
+            userSession = nil
+        } catch {
+            print("cant sign out \(error.localizedDescription)")
+        }
+
     }
 }
