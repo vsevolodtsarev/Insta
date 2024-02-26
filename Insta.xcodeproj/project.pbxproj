@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		130854532B8CC39800DB135A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130854522B8CC39800DB135A /* AuthService.swift */; };
 		130854572B8CC64C00DB135A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130854562B8CC64C00DB135A /* RootViewModel.swift */; };
+		1308545A2B8CE37400DB135A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130854592B8CE37400DB135A /* RegistrationViewModel.swift */; };
 		1313D9B92B8BB8D9002F5F6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1313D9B82B8BB8D9002F5F6C /* GoogleService-Info.plist */; };
 		1313D9C82B8BB947002F5F6C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1313D9C72B8BB947002F5F6C /* FirebaseAuth */; };
 		1313D9D42B8BB947002F5F6C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1313D9D32B8BB947002F5F6C /* FirebaseFirestore */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		130854522B8CC39800DB135A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		130854562B8CC64C00DB135A /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		130854592B8CE37400DB135A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		1313D9B82B8BB8D9002F5F6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		132966082B89155F00B3A5D1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1329660A2B89216F00B3A5D1 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		130854582B8CE36400DB135A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				130854592B8CE37400DB135A /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1351510E2B84A6EE001621A0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +209,7 @@
 		135151152B84A8CF001621A0 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				130854582B8CE36400DB135A /* ViewModel */,
 				130854512B8CC37900DB135A /* Services */,
 				130854502B8CC31F00DB135A /* View */,
 			);
@@ -407,6 +418,7 @@
 				13F2A1CB2B86738500164261 /* CreatePasswordView.swift in Sources */,
 				132966092B89155F00B3A5D1 /* Post.swift in Sources */,
 				135151322B862BDE001621A0 /* InstaButtonView.swift in Sources */,
+				1308545A2B8CE37400DB135A /* RegistrationViewModel.swift in Sources */,
 				135151212B84AAF8001621A0 /* Constants.swift in Sources */,
 				135151252B84B40B001621A0 /* ProfileView.swift in Sources */,
 				130854532B8CC39800DB135A /* AuthService.swift in Sources */,
