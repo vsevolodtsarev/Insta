@@ -9,11 +9,12 @@ import SwiftUI
 
 struct CompleteSignUpView: View {
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     var body: some View {
         NavigationStack {
             VStack(spacing: 12) {
-                Text(verbatim: "Welcome to Insta, new user!")
+                Text(verbatim: "Welcome to Insta, \(viewModel.username)!")
                     .font(.title2)
                     .fontWeight(.bold)
                     .padding(.top)
@@ -27,7 +28,7 @@ struct CompleteSignUpView: View {
                 
                 InstaButtonView(text: "Complete Sign Up",
                                 isAuthButton: true) {
-                    
+                    Task { try await viewModel.createUser() }
                     print("")
                 }
                                 .padding(.top)
