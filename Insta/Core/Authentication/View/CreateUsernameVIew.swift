@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CreateUsernameVIew: View {
     @Environment(\.dismiss) var dismiss
-    @State private var username = ""
+    @EnvironmentObject var viewModel: RegistrationViewModel
     @State private var isShowCreatePasswordScreen = false
     
     var body: some View {
@@ -26,7 +26,7 @@ struct CreateUsernameVIew: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
                 
-                InstaInputView(text: $username,
+                InstaInputView(text: $viewModel.username,
                                placeholder: "Enter your username",
                                isSecureField: false)
                 .padding(.horizontal, 24)

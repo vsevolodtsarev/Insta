@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CreatePasswordView: View {
     @Environment(\.dismiss) var dismiss
-    @State private var password = ""
+    @EnvironmentObject var viewModel: RegistrationViewModel
     @State private var confirmPassword = ""
     @State private var isShowMainTabView = false
     
@@ -27,7 +27,7 @@ struct CreatePasswordView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
                 
-                InstaInputView(text: $password,
+                InstaInputView(text: $viewModel.password,
                                placeholder: "Enter your password",
                                isSecureField: true)
                 .padding(.horizontal, 24)

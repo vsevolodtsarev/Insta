@@ -9,8 +9,8 @@ import SwiftUI
 
 struct AddEmailView: View {
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
     @State private var isShowCreateUsernameScreen = false
-    @State private var email = ""
     
     var body: some View {
         NavigationStack {
@@ -26,7 +26,7 @@ struct AddEmailView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
                 
-                InstaInputView(text: $email,
+                InstaInputView(text: $viewModel.email,
                                placeholder: "Enter your email",
                                isSecureField: false)
                 .textInputAutocapitalization(.never)
