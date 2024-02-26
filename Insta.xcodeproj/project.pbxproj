@@ -90,6 +90,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130854502B8CC31F00DB135A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1351512F2B86289C001621A0 /* LoginView.swift */,
+				13F2A1C62B86629F00164261 /* AddEmailView.swift */,
+				13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */,
+				13F2A1CA2B86738500164261 /* CreatePasswordView.swift */,
+				13F2A1CC2B867AAC00164261 /* CompleteSignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1351510E2B84A6EE001621A0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,11 +170,7 @@
 		135151152B84A8CF001621A0 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				1351512F2B86289C001621A0 /* LoginView.swift */,
-				13F2A1C62B86629F00164261 /* AddEmailView.swift */,
-				13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */,
-				13F2A1CA2B86738500164261 /* CreatePasswordView.swift */,
-				13F2A1CC2B867AAC00164261 /* CompleteSignUpView.swift */,
+				130854502B8CC31F00DB135A /* View */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
