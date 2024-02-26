@@ -22,6 +22,8 @@ enum SFSymbolsImage {
     
     // Profile:
     static let toolbarItem = Image(systemName: "line.3.horizontal")
+    static let toolbarLogOut = Image(systemName: "door.left.hand.open")
+    static let toolbarSettings = Image(systemName: "gear")
     
     // Feed:
     static let likePost = Image(systemName: "heart")

@@ -1,5 +1,5 @@
 //
-//  CreateUsernameVIew.swift
+//  CreatePasswordView.swift
 //  Insta
 //
 //  Created by Всеволод Царев on 21.02.2024.
@@ -7,41 +7,51 @@
 
 import SwiftUI
 
-struct CreateUsernameVIew: View {
+struct CreatePasswordView: View {
     @Environment(\.dismiss) var dismiss
-    @State private var username = ""
-    @State private var isShowCreatePasswordScreen = false
+    @EnvironmentObject var viewModel: RegistrationViewModel
+    @State private var confirmPassword = ""
+    @State private var isShowMainTabView = false
     
     var body: some View {
         NavigationStack {
             VStack(spacing: 12) {
-                Text("Create username")
+                Text("Create password")
                     .font(.title2)
                     .fontWeight(.bold)
                     .padding(.top)
                 
-                Text("Pick a username for your new account. You can always change it later")
+                Text("Your password must be at least 6 characters in length")
                     .font(.footnote)
                     .foregroundStyle(.gray)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
                 
-                InstaInputView(text: $username,
-                               placeholder: "Enter your username",
-                               isSecureField: false)
+                InstaInputView(text: $viewModel.password,
+                               placeholder: "Enter your password",
+                               isSecureField: true)
                 .padding(.horizontal, 24)
                 .padding(.top)
                 
-                NavigationLink(isActive: $isShowCreatePasswordScreen) {
-                    CreatePasswordView()
+                InstaInputView(text: $confirmPassword,
+                               placeholder: "Confirm your password",
+                               isSecureField: true)
+                .padding(.horizontal, 24)
+                
+                
+                NavigationLink(isActive: $isShowMainTabView) {
+                    CompleteSignUpView()
                         .navigationBarBackButtonHidden()
                 } label: {
                     InstaButtonView(text: "Next",
                                     isAuthButton: true) {
-                        isShowCreatePasswordScreen.toggle()
+                        
+                        isShowMainTabView.toggle()
                     }
                                     .padding(.top)
                 }
+                
+
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
@@ -58,5 +68,5 @@ struct CreateUsernameVIew: View {
 }
 
 #Preview {
-    CreateUsernameVIew()
+    CreatePasswordView()
 }
