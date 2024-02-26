@@ -9,6 +9,7 @@ import Foundation
 import FirebaseAuth
 import Combine
 
+@MainActor
 final class RootViewModel: ObservableObject {
     private let authService = AuthService.shared
     private var cancellables = Set<AnyCancellable>()
@@ -19,7 +20,7 @@ final class RootViewModel: ObservableObject {
         setupSubscribers()
     }
     
-    func setupSubscribers() {
+    private func setupSubscribers() {
         let _ = authService.$userSession.sink { [weak self] userSession in
             guard let self else { return }
             self.userSession = userSession
