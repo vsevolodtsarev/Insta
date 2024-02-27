@@ -23,7 +23,7 @@ extension User {
               username: "mockuser1",
               fullname: "Mock User1",
               bio: "user1 mock bio",
-              profileImageUrl: nil),
+              profileImageUrl: "mockAvatar"),
         .init(id: UUID().uuidString,
               email: "test2@gmail.com",
               username: "mockuser2",
