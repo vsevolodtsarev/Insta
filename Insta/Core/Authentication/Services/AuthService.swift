@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import Firebase
 import FirebaseAuth
+import FirebaseFirestoreSwift
 
 final class AuthService {
     
@@ -23,6 +25,7 @@ final class AuthService {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             userSession = result.user
+            await uploadUserData(uid: result.user.uid, username: username, email: email)
         } catch {
             print("cant register with error \(error.localizedDescription)")
         }
@@ -49,6 +52,11 @@ final class AuthService {
         } catch {
             print("cant sign out \(error.localizedDescription)")
         }
-
+    }
+    
+    private func uploadUserData(uid: String, username: String, email: String) async {
+        let user = User(id: uid, email: email, username: username)
+        guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
+        try? await Firestore.firestore().collection("users").document().setData(encodedUser)
     }
 }
