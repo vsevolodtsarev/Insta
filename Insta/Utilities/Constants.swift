@@ -23,12 +23,16 @@ enum SFSymbolsImage {
     // Profile:
     static let toolbarItem = Image(systemName: "line.3.horizontal")
     static let toolbarLogOut = Image(systemName: "door.left.hand.open")
-    static let toolbarSettings = Image(systemName: "gear")
+    static let gear = Image(systemName: "gear")
     
     // Feed:
     static let likePost = Image(systemName: "heart")
     static let commentOnPost = Image(systemName: "bubble.right")
     static let sharePost = Image(systemName: "paperplane")
+    
+    // Settings:
+    static let arrowLeft = Image(systemName: "arrow.left.circle.fill")
+    static let xmarkFill = Image(systemName: "xmark.circle.fill")
 }
 
 enum AppImages {
