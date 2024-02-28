@@ -11,6 +11,16 @@
         }
       }
     },
+    "Account" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аккаунт"
+          }
+        }
+      }
+    },
     "Add your email" : {
       "localizations" : {
         "ru" : {
@@ -87,6 +97,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Создайте имя пользователя"
+          }
+        }
+      }
+    },
+    "Delete Account" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить Аккаунт"
           }
         }
       }
@@ -168,6 +189,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Забыли пароль?"
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Основные"
           }
         }
       }
@@ -303,6 +334,9 @@
         }
       }
     },
+    "test" : {
+
+    },
     "Upload" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -320,6 +354,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Новая публикация"
+          }
+        }
+      }
+    },
+    "Version" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия"
           }
         }
       }

@@ -38,7 +38,7 @@ struct CurrentUserProfileView: View {
                                     print("go to settings")
                                 }, label: {
                                     HStack {
-                                        SFSymbolsImage.toolbarSettings
+                                        SFSymbolsImage.gear
                                         Text("Settings")
                                     }
                                 })
