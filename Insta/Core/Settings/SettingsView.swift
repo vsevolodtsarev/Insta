@@ -11,63 +11,63 @@ struct SettingsView: View {
     private let user = User.MOCK_USERS.first!
     
     var body: some View {
-            List {
-                Section {
-                    HStack {
-                        Text(user.initials)
-                            .font(.title)
-                            .fontWeight(.semibold)
-                            .foregroundStyle(.white)
-                            .frame(width: 72, height: 72)
-                            .background(Color(.systemGray4))
-                            .clipShape(Circle())
-                        
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(user.fullname ?? "")
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                                .padding(.top, 4)
-                            
-                            Text(user.email)
-                                .font(.footnote)
-                                .foregroundStyle(.gray)
-                        }
-                        
-                    }
-                }
-                
-                Section("General") {
-                    HStack {
-                        SettingsRowItemView(image: SFSymbolsImage.gear,
-                                        title: LocalizedStringKey("Version"),
-                                        tintColor: Color(.systemGray))
-                        Spacer()
-                        
-                        Text(verbatim: "1.0.0")
+        List {
+            Section {
+                HStack {
+                    Text(user.initials)
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.white)
+                        .frame(width: 72, height: 72)
+                        .background(Color(.systemGray4))
+                        .clipShape(Circle())
+                    
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(user.fullname ?? "")
                             .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .padding(.top, 4)
+                        
+                        Text(user.email)
+                            .font(.footnote)
                             .foregroundStyle(.gray)
                     }
+                    
                 }
-                
-                Section("Account") {
-                    Button {
-                       
-                    } label: {
-                        SettingsRowItemView(image: SFSymbolsImage.arrowLeft,
+            }
+            
+            Section("General") {
+                HStack {
+                    SettingsRowItemView(image: SFSymbolsImage.gear,
+                                        title: LocalizedStringKey("Version"),
+                                        tintColor: Color(.systemGray))
+                    Spacer()
+                    
+                    Text(verbatim: "1.0.0")
+                        .font(.subheadline)
+                        .foregroundStyle(.gray)
+                }
+            }
+            
+            Section("Account") {
+                Button {
+                    
+                } label: {
+                    SettingsRowItemView(image: SFSymbolsImage.arrowLeft,
                                         title: "Sign Out",
                                         tintColor: Color(.red))
-                    }
+                }
+                
+                Button {
                     
-                    Button {
-                        
-                    } label: {
-                        SettingsRowItemView(image: SFSymbolsImage.xmarkFill,
+                } label: {
+                    SettingsRowItemView(image: SFSymbolsImage.xmarkFill,
                                         title: LocalizedStringKey("Delete Account"),
                                         tintColor: Color(.red))
-                    }
                 }
             }
         }
+    }
 }
 
 #Preview {
