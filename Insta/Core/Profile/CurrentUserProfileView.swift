@@ -16,6 +16,7 @@ struct CurrentUserProfileView: View {
     }
     
     var body: some View {
+
         NavigationStack {
             ScrollView {
                 ProfileHeaderView(user: user)
@@ -32,32 +33,32 @@ struct CurrentUserProfileView: View {
                         SFSymbolsImage.toolbarItem
                     })
                     .sheet(isPresented: $isShowBottomSheet, content: {
-                            List {
-                                //Settings button
-                                Button(action: {
-                                    print("go to settings")
-                                }, label: {
-                                    HStack {
-                                        SFSymbolsImage.gear
-                                        Text("Settings")
-                                    }
-                                })
-                                .listRowBackground(Color.clear)
-                                
-                                //Log out button
-                                Button(action: {
-                                    AuthService.shared.signOut()
-                                }, label: {
-                                    HStack {
-                                        SFSymbolsImage.toolbarLogOut
-                                        Text("Sign Out")
-                                            .foregroundStyle(.red)
-                                    }
-                                })
-                                .listRowBackground(Color.clear)
+                        List {
+                            //Settings button
+                            Button(action: {
+                               
+                            }, label: {
+                                HStack {
+                                    SFSymbolsImage.gear
+                                    Text("Settings")
+                                }
+                            })
+                            .listRowBackground(Color.clear)
+                            
+                            //Log out button
+                            Button(action: {
+                                AuthService.shared.signOut()
+                            }, label: {
+                                HStack {
+                                    SFSymbolsImage.toolbarLogOut
+                                    Text("Sign Out")
+                                        .foregroundStyle(.red)
+                                }
+                            })
+                            .listRowBackground(Color.clear)
                         }
-                            .presentationDragIndicator(.visible)
-                            .presentationDetents([.height(120)])
+                        .presentationDragIndicator(.visible)
+                        .presentationDetents([.height(120)])
                     })
                 }
             }
