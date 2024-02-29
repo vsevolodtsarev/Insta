@@ -37,12 +37,14 @@ final class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             userSession = result.user
+            try await loadUserData()
         } catch {
             print("cant login with error \(error.localizedDescription)")
         }
     }
     
-    func loadUserData() async throws {
+    @MainActor
+    private func loadUserData() async throws {
         userSession = Auth.auth().currentUser
         guard let currentUid = userSession?.uid else { return }
         print(currentUid)
@@ -50,10 +52,12 @@ final class AuthService {
         currentUser = try? snapshot.data(as: User.self)
     }
     
+    @MainActor
     func signOut() {
         do {
             try Auth.auth().signOut()
             userSession = nil
+            currentUser = nil
         } catch {
             print("cant sign out \(error.localizedDescription)")
         }
@@ -61,6 +65,7 @@ final class AuthService {
     
     private func uploadUserData(uid: String, username: String, email: String) async {
         let user = User(id: uid, email: email, username: username)
+        currentUser = user
         guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
         try? await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
     }
