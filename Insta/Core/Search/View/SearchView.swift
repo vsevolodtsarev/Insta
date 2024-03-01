@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct SearchView: View {
+    @StateObject private var viewModel = SearchViewModel()
     @State private var searchText = ""
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing: 18) {
-                    ForEach(User.MOCK_USERS) { user in
+                    ForEach(viewModel.users) { user in
                         NavigationLink(value: user) {
                             HStack {
                                 Image(user.profileImageUrl ?? "placeholder here")
