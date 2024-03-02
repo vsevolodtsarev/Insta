@@ -38,8 +38,7 @@ struct AddEmailView: View {
                     CreateUsernameVIew()
                         .navigationBarBackButtonHidden()
                 } label: {
-                    InstaButtonView(text: "Next",
-                                    isAuthButton: true) {
+                    AuthButtonView(text: "Next") {
                         isShowCreateUsernameScreen.toggle()
                     }
                                     .padding(.top)

@@ -36,8 +36,7 @@ struct CreateUsernameVIew: View {
                     CreatePasswordView()
                         .navigationBarBackButtonHidden()
                 } label: {
-                    InstaButtonView(text: "Next",
-                                    isAuthButton: true) {
+                    AuthButtonView(text: "Next") {
                         isShowCreatePasswordScreen.toggle()
                     }
                                     .padding(.top)

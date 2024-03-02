@@ -49,8 +49,7 @@ struct LoginView: View {
                 }
                 
                 //Log in button
-                InstaButtonView(text: "Sign In",
-                                isAuthButton: true) {
+                AuthButtonView(text: "Sign In") {
                     Task { try await viewModel.login() }
                 }
                                 .padding(.vertical)

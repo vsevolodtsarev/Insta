@@ -43,8 +43,7 @@ struct CreatePasswordView: View {
                     CompleteSignUpView()
                         .navigationBarBackButtonHidden()
                 } label: {
-                    InstaButtonView(text: "Next",
-                                    isAuthButton: true) {
+                    AuthButtonView(text: "Next") {
                         
                         isShowMainTabView.toggle()
                     }

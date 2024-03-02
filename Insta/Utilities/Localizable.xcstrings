@@ -183,6 +183,16 @@
         }
       }
     },
+    "Follow" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подписаться"
+          }
+        }
+      }
+    },
     "Forgot password?" : {
       "localizations" : {
         "ru" : {

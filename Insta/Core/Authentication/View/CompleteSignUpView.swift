@@ -26,8 +26,7 @@ struct CompleteSignUpView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
                 
-                InstaButtonView(text: "Complete Sign Up",
-                                isAuthButton: true) {
+                AuthButtonView(text: "Complete Sign Up") {
                     Task { try await viewModel.createUser() }
                     print("")
                 }
