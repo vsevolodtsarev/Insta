@@ -49,13 +49,28 @@ struct ProfileHeaderView: View {
             .padding(.bottom, 4)
             
             // Edit Profile button
-            InstaButtonView(text: "Edit Profile",
-                            isAuthButton: false) {
-                print("To edit profile")
-            }
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(.gray, lineWidth: 1))
+            Button(action: {
+                if user.isCurrentUser {
+                    print("go profile")
+                } else {
+                    print("follow user")
+                }
+                
+            }, label: {
+                Text(user.isCurrentUser ? "Edit Profile" : "Follow")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .frame(width: 360,
+                           height: 32)
+                    .background(user.isCurrentUser ?  .clear : .blue)
+                    .foregroundStyle(user.isCurrentUser ? .accent : .white)
+                    .cornerRadius(10)
+            })
+            
+            .overlay(
+                RoundedRectangle(cornerRadius: 6)
+                    .stroke(user.isCurrentUser ? .gray : .clear,
+                            lineWidth: 1))
             
             Divider()
         }
