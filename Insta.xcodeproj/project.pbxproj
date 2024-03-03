@@ -48,6 +48,7 @@
 		13FF4A9F2B9259DD00FFE7DE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4A9E2B9259DD00FFE7DE /* UserService.swift */; };
 		13FF4AA32B925B2300FFE7DE /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AA22B925B2300FFE7DE /* SearchViewModel.swift */; };
 		13FF4AA52B939EE800FFE7DE /* AuthButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AA42B939EE800FFE7DE /* AuthButtonView.swift */; };
+		13FF4AA72B94C36300FFE7DE /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AA62B94C36300FFE7DE /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		13FF4A9E2B9259DD00FFE7DE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		13FF4AA22B925B2300FFE7DE /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		13FF4AA42B939EE800FFE7DE /* AuthButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonView.swift; sourceTree = "<group>"; };
+		13FF4AA62B94C36300FFE7DE /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 				135151242B84B40B001621A0 /* ProfileView.swift */,
 				13F2A1D02B87BCCE00164261 /* CurrentUserProfileView.swift */,
 				1329660C2B8924ED00B3A5D1 /* ProfileHeaderView.swift */,
+				13FF4AA62B94C36300FFE7DE /* EditProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				1329660F2B8A61F700B3A5D1 /* UploadPostView.swift in Sources */,
 				13F2A1CB2B86738500164261 /* CreatePasswordView.swift in Sources */,
 				1331EB432B8F6EE90083F308 /* SettingsView.swift in Sources */,
+				13FF4AA72B94C36300FFE7DE /* EditProfileView.swift in Sources */,
 				132966092B89155F00B3A5D1 /* Post.swift in Sources */,
 				1308545A2B8CE37400DB135A /* RegistrationViewModel.swift in Sources */,
 				135151212B84AAF8001621A0 /* Constants.swift in Sources */,
