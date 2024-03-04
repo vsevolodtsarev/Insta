@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct EditProfileRowView: View {
-    let title: String
-    let placeholder: String
+    let title: LocalizedStringKey
+    let placeholder: LocalizedStringKey
     @Binding var text: String
     
     var body: some View {
@@ -30,5 +30,5 @@ struct EditProfileRowView: View {
 }
 
 #Preview {
-    EditProfileRowView(title: "Name", placeholder: "placegolder", text: .constant(""))
+    EditProfileRowView(title: "Name", placeholder: "placeholder", text: .constant(""))
 }
