@@ -263,11 +263,7 @@
 		135151182B84A8E2001621A0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				135151242B84B40B001621A0 /* ProfileView.swift */,
-				13F2A1D02B87BCCE00164261 /* CurrentUserProfileView.swift */,
-				1329660C2B8924ED00B3A5D1 /* ProfileHeaderView.swift */,
-				13FF4AA62B94C36300FFE7DE /* EditProfileView.swift */,
-				13FF4AA82B96372B00FFE7DE /* EditProfileRowView.swift */,
+				13FF4AAA2B963D0F00FFE7DE /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -362,6 +358,26 @@
 				13FF4AA22B925B2300FFE7DE /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13FF4AAA2B963D0F00FFE7DE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				13FF4AAB2B963D1800FFE7DE /* View */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13FF4AAB2B963D1800FFE7DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				135151242B84B40B001621A0 /* ProfileView.swift */,
+				13F2A1D02B87BCCE00164261 /* CurrentUserProfileView.swift */,
+				1329660C2B8924ED00B3A5D1 /* ProfileHeaderView.swift */,
+				13FF4AA62B94C36300FFE7DE /* EditProfileView.swift */,
+				13FF4AA82B96372B00FFE7DE /* EditProfileRowView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
