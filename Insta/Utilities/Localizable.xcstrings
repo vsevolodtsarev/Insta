@@ -31,6 +31,26 @@
         }
       }
     },
+    "Bio" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Био"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отменить"
+          }
+        }
+      }
+    },
     "Click bellow to complete registration and start using Insta" : {
       "localizations" : {
         "ru" : {
@@ -122,12 +142,52 @@
         }
       }
     },
+    "Done" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Редактировать"
+          }
+        }
+      }
+    },
     "Edit Profile" : {
       "localizations" : {
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Редактировать профиль"
+          }
+        }
+      }
+    },
+    "Edit profile picture" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить фото"
+          }
+        }
+      }
+    },
+    "Enter your bio..." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите ваше био..."
           }
         }
       }
@@ -149,6 +209,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Введите email"
+          }
+        }
+      }
+    },
+    "Enter your name..." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите ваше имя..."
           }
         }
       }
@@ -224,6 +294,16 @@
         }
       }
     },
+    "Name" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Имя"
+          }
+        }
+      }
+    },
     "Next" : {
       "localizations" : {
         "ru" : {
@@ -273,6 +353,9 @@
           }
         }
       }
+    },
+    "placeholder" : {
+
     },
     "Profile" : {
       "localizations" : {
