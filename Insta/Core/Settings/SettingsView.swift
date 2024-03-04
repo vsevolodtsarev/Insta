@@ -57,7 +57,6 @@ struct SettingsView: View {
                                         title: "Sign Out",
                                         tintColor: Color(.red))
                 }
-                
                 Button {
                     
                 } label: {
