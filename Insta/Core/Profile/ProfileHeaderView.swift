@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileHeaderView: View {
+    @State private var showEditProfileView = false
     let user: User
     
     var body: some View {
@@ -51,7 +52,7 @@ struct ProfileHeaderView: View {
             // Edit Profile button
             Button(action: {
                 if user.isCurrentUser {
-                    print("go profile")
+                    showEditProfileView.toggle()
                 } else {
                     print("follow user")
                 }
@@ -72,6 +73,9 @@ struct ProfileHeaderView: View {
                     .stroke(user.isCurrentUser ? .gray : .clear,
                             lineWidth: 1))
             
+            .fullScreenCover(isPresented: $showEditProfileView, content: {
+                EditProfileView()
+            })
             Divider()
         }
     }
