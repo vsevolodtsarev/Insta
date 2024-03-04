@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Environment(\.dismiss) var dismiss
     private let user = User.MOCK_USERS.first!
     
     var body: some View {
+        //toolbar
+        ZStack {
+            HStack {
+                Button(action: {
+                    dismiss()
+                }, label: {
+                    SFSymbolsImage.backButton
+                        .imageScale(.large)
+                })
+                Spacer()
+            }
+            .padding(.horizontal)
+            
+            Text("Settings")
+                .font(.subheadline)
+                .frame(maxWidth: .infinity, alignment: .center)
+        }
+        
         List {
             Section {
+                //user info section
                 HStack {
                     Text(user.initials)
                         .font(.title)
@@ -57,7 +77,6 @@ struct SettingsView: View {
                                         title: "Sign Out",
                                         tintColor: Color(.red))
                 }
-                
                 Button {
                     
                 } label: {
@@ -66,7 +85,7 @@ struct SettingsView: View {
                                         tintColor: Color(.red))
                 }
             }
-        }
+        }   
     }
 }
 

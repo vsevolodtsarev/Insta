@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CurrentUserProfileView: View {
-    @State private var isShowBottomSheet = false
+    @State private var showBottomSheet = false
+    @State private var showSettingsView = false
     let user: User
     
     var posts: [Post] {
@@ -28,22 +29,27 @@ struct CurrentUserProfileView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {
-                        isShowBottomSheet.toggle()
+                        showBottomSheet.toggle()
                     }, label: {
                         SFSymbolsImage.toolbarItem
                     })
-                    .sheet(isPresented: $isShowBottomSheet, content: {
+                    .sheet(isPresented: $showBottomSheet, content: {
                         List {
                             //Settings button
                             Button(action: {
-                               
+                                showSettingsView.toggle()
                             }, label: {
                                 HStack {
                                     SFSymbolsImage.gear
                                     Text("Settings")
                                 }
                             })
+                            
                             .listRowBackground(Color.clear)
+                            .fullScreenCover(isPresented: $showSettingsView, content: {
+                                SettingsView()
+                            })
+                           
                             
                             //Log out button
                             Button(action: {
