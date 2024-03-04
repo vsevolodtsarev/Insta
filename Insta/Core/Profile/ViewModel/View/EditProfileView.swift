@@ -9,10 +9,8 @@ import SwiftUI
 import PhotosUI
 
 struct EditProfileView: View {
-    @Environment(\.dismiss) var dismiss
-    @State private var selectedImage: PhotosPickerItem?
-    @State private var fullname = ""
-    @State private var bio = ""
+    @Environment(\.dismiss) private var dismiss
+    @StateObject private var viewModel = EditProfileViewModel()
     
     var body: some View {
         
@@ -46,13 +44,21 @@ struct EditProfileView: View {
             .padding(.horizontal)
             //edit profile pic
             
-            PhotosPicker(selection: $selectedImage) {
+            PhotosPicker(selection: $viewModel.selectedImage) {
                 VStack {
-                    Image(.avatarPlaceholder)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 80, height: 80)
-                        .clipShape(Circle())
+                    if let image = viewModel.profileImage {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                    } else {
+                        Image(.avatarPlaceholder)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                    }
                     
                     Text("Edit profile picture")
                         .font(.footnote)
@@ -68,14 +74,13 @@ struct EditProfileView: View {
             VStack {
                 EditProfileRowView(title: "Name",
                                    placeholder: "Enter your name...",
-                                   text: $fullname)
+                                   text: $viewModel.fullname)
                 
                 EditProfileRowView(title: "Bio",
                                    placeholder: "Enter your bio...",
-                                   text: $bio)
+                                   text: $viewModel.bio)
             }
         }
-        
         
         Spacer()
     }
