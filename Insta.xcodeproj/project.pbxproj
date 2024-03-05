@@ -51,6 +51,7 @@
 		13FF4AA72B94C36300FFE7DE /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AA62B94C36300FFE7DE /* EditProfileView.swift */; };
 		13FF4AA92B96372B00FFE7DE /* EditProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AA82B96372B00FFE7DE /* EditProfileRowView.swift */; };
 		13FF4AAD2B963D8000FFE7DE /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AAC2B963D8000FFE7DE /* EditProfileViewModel.swift */; };
+		13FF4AB12B973B0600FFE7DE /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AB02B973B0600FFE7DE /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		13FF4AA62B94C36300FFE7DE /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		13FF4AA82B96372B00FFE7DE /* EditProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRowView.swift; sourceTree = "<group>"; };
 		13FF4AAC2B963D8000FFE7DE /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		13FF4AB02B973B0600FFE7DE /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +162,8 @@
 		1331EB412B8F6ED50083F308 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				1331EB422B8F6EE90083F308 /* SettingsView.swift */,
-				1331EB442B8F700E0083F308 /* SettingRowItemView.swift */,
+				13FF4AAF2B973AD900FFE7DE /* ViewModel */,
+				13FF4AAE2B973AD000FFE7DE /* View */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -383,6 +385,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		13FF4AAE2B973AD000FFE7DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1331EB422B8F6EE90083F308 /* SettingsView.swift */,
+				1331EB442B8F700E0083F308 /* SettingRowItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13FF4AAF2B973AD900FFE7DE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				13FF4AB02B973B0600FFE7DE /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -478,6 +497,7 @@
 				137BBA4E2B7F815E002B0EC7 /* InstaApp.swift in Sources */,
 				135151282B84C1D1001621A0 /* UserStatView.swift in Sources */,
 				1329660D2B8924ED00B3A5D1 /* ProfileHeaderView.swift in Sources */,
+				13FF4AB12B973B0600FFE7DE /* SettingsViewModel.swift in Sources */,
 				135151342B863399001621A0 /* InstaInputView.swift in Sources */,
 				1331EB452B8F700E0083F308 /* SettingRowItemView.swift in Sources */,
 				1329660F2B8A61F700B3A5D1 /* UploadPostView.swift in Sources */,
