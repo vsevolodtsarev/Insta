@@ -160,8 +160,8 @@
 		1331EB412B8F6ED50083F308 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				1331EB422B8F6EE90083F308 /* SettingsView.swift */,
-				1331EB442B8F700E0083F308 /* SettingRowItemView.swift */,
+				13FF4AAF2B973AD900FFE7DE /* ViewModel */,
+				13FF4AAE2B973AD000FFE7DE /* View */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -381,6 +381,22 @@
 				13FF4AA82B96372B00FFE7DE /* EditProfileRowView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		13FF4AAE2B973AD000FFE7DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1331EB422B8F6EE90083F308 /* SettingsView.swift */,
+				1331EB442B8F700E0083F308 /* SettingRowItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13FF4AAF2B973AD900FFE7DE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
