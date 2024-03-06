@@ -52,6 +52,7 @@
 		13FF4AA92B96372B00FFE7DE /* EditProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AA82B96372B00FFE7DE /* EditProfileRowView.swift */; };
 		13FF4AAD2B963D8000FFE7DE /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AAC2B963D8000FFE7DE /* EditProfileViewModel.swift */; };
 		13FF4AB12B973B0600FFE7DE /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AB02B973B0600FFE7DE /* SettingsViewModel.swift */; };
+		13FF4AB32B98F10A00FFE7DE /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF4AB22B98F10A00FFE7DE /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		13FF4AA82B96372B00FFE7DE /* EditProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRowView.swift; sourceTree = "<group>"; };
 		13FF4AAC2B963D8000FFE7DE /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		13FF4AB02B973B0600FFE7DE /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		13FF4AB22B98F10A00FFE7DE /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				130854522B8CC39800DB135A /* AuthService.swift */,
+				13FF4AB22B98F10A00FFE7DE /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				132966092B89155F00B3A5D1 /* Post.swift in Sources */,
 				1308545A2B8CE37400DB135A /* RegistrationViewModel.swift in Sources */,
 				135151212B84AAF8001621A0 /* Constants.swift in Sources */,
+				13FF4AB32B98F10A00FFE7DE /* ImageUploader.swift in Sources */,
 				13FF4AA52B939EE800FFE7DE /* AuthButtonView.swift in Sources */,
 				135151252B84B40B001621A0 /* ProfileView.swift in Sources */,
 				13FF4AAD2B963D8000FFE7DE /* EditProfileViewModel.swift in Sources */,
