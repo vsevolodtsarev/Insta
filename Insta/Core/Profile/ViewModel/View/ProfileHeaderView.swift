@@ -74,7 +74,7 @@ struct ProfileHeaderView: View {
                             lineWidth: 1))
             
             .fullScreenCover(isPresented: $showEditProfileView, content: {
-                EditProfileView()
+                EditProfileView(user: user)
             })
             Divider()
         }
