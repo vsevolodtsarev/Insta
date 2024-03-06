@@ -10,7 +10,11 @@ import PhotosUI
 
 struct EditProfileView: View {
     @Environment(\.dismiss) private var dismiss
-    @StateObject private var viewModel = EditProfileViewModel()
+    @StateObject private var viewModel: EditProfileViewModel
+    
+    init(user: User) {
+        _viewModel = StateObject(wrappedValue: EditProfileViewModel(user: user))
+    }
     
     var body: some View {
         
@@ -34,7 +38,8 @@ struct EditProfileView: View {
                 Spacer()
                 
                 Button(action: {
-                    print("done")
+                    Task {  try await viewModel.updateUserData() }
+                    dismiss()
                 }, label: {
                     Text("Done")
                         .font(.subheadline)
@@ -87,5 +92,5 @@ struct EditProfileView: View {
 }
 
 #Preview {
-    EditProfileView()
+    EditProfileView(user: User.MOCK_USERS[1])
 }
