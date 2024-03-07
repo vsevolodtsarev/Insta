@@ -270,6 +270,7 @@
 		135151182B84A8E2001621A0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				13FF4AAB2B963D1800FFE7DE /* View */,
 				13FF4AAA2B963D0F00FFE7DE /* ViewModel */,
 			);
 			path = Profile;
@@ -371,7 +372,6 @@
 			isa = PBXGroup;
 			children = (
 				13FF4AAC2B963D8000FFE7DE /* EditProfileViewModel.swift */,
-				13FF4AAB2B963D1800FFE7DE /* View */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
