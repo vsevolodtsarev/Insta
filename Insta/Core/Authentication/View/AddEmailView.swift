@@ -41,7 +41,7 @@ struct AddEmailView: View {
                     AuthButtonView(text: "Next") {
                         isShowCreateUsernameScreen.toggle()
                     }
-                                    .padding(.top)
+                    .padding(.top)
                 }
             }
             .toolbar {

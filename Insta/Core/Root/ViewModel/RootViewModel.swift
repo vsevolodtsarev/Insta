@@ -25,12 +25,12 @@ final class RootViewModel: ObservableObject {
             guard let self else { return }
             self.userSession = userSession
         }
-            .store(in: &cancellables)
+        .store(in: &cancellables)
         
         authService.$currentUser.sink { [weak self] currentUser in
             guard let self else { return }
             self.currentUser = currentUser
         }
-            .store(in: &cancellables)
+        .store(in: &cancellables)
     }
 }

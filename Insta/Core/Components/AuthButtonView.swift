@@ -25,7 +25,6 @@ struct AuthButtonView: View {
                 .foregroundStyle(.white)
                 .cornerRadius(10)
         })
-      
     }
 }
 

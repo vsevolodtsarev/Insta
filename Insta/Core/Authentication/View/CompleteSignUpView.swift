@@ -30,7 +30,7 @@ struct CompleteSignUpView: View {
                     Task { try await viewModel.createUser() }
                     print("")
                 }
-                                .padding(.top)
+                .padding(.top)
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
