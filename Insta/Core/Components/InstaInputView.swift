@@ -20,11 +20,11 @@ struct InstaInputView: View {
                 if isShowSecureText {
                     TextField(placeholder, text: $text)
                         .instaTextFieldModifier()
-                        
+                    
                 } else {
                     SecureField(placeholder, text: $text)
                         .instaTextFieldModifier()
-                     
+                    
                 }
                 
                 Button(action: {
@@ -33,7 +33,7 @@ struct InstaInputView: View {
                     Image(systemName: isShowSecureText ? "eye.slash" : "eye")
                         .accentColor(.gray)
                         .padding(.horizontal, 12)
-                        
+                    
                 })
                 
             } else {
