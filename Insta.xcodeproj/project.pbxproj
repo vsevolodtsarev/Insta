@@ -132,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				130854522B8CC39800DB135A /* AuthService.swift */,
-				13FF4AB22B98F10A00FFE7DE /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -201,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				13FF4A9E2B9259DD00FFE7DE /* UserService.swift */,
+				13FF4AB22B98F10A00FFE7DE /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
