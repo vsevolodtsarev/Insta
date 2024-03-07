@@ -52,7 +52,7 @@ struct LoginView: View {
                 AuthButtonView(text: "Sign In") {
                     Task { try await viewModel.login() }
                 }
-                                .padding(.vertical)
+                .padding(.vertical)
                 
                 //Divider
                 HStack {

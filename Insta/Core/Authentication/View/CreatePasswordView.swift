@@ -47,10 +47,8 @@ struct CreatePasswordView: View {
                         
                         isShowMainTabView.toggle()
                     }
-                                    .padding(.top)
+                    .padding(.top)
                 }
-                
-
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {

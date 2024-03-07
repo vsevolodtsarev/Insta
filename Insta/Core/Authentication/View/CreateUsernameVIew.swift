@@ -39,7 +39,7 @@ struct CreateUsernameVIew: View {
                     AuthButtonView(text: "Next") {
                         isShowCreatePasswordScreen.toggle()
                     }
-                                    .padding(.top)
+                    .padding(.top)
                 }
             }
             .toolbar {
