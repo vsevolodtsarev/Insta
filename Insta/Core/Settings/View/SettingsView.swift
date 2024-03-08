@@ -34,12 +34,10 @@ struct SettingsView: View {
             Section {
                 //user info section
                 HStack {
-                    Text(user.initials)
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                        .frame(width: 72, height: 72)
-                        .background(Color(.systemGray4))
+                    Image(user.profileImageUrl ?? "")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 80, height: 80)
                         .clipShape(Circle())
                     
                     VStack(alignment: .leading, spacing: 4) {
