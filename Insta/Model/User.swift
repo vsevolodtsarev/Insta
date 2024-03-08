@@ -20,15 +20,6 @@ struct User: Identifiable, Hashable, Codable {
         guard let currentUid = Auth.auth().currentUser?.uid else { return false }
         return currentUid == id
     }
-    
-    var initials: String {
-        let formatter = PersonNameComponentsFormatter()
-        if let components = formatter.personNameComponents(from: fullname ?? "") {
-            formatter.style = .abbreviated
-            return formatter.string(from: components)
-        }
-        return ""
-    }
 }
 
 extension User {
