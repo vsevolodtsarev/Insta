@@ -8,5 +8,5 @@
 import Foundation
 
 final class SettingsViewModel: ObservableObject {
-    
+    let user = User.MOCK_USERS.first!
 }
