@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(\.dismiss) var dismiss
-    private let user = User.MOCK_USERS.first!
+    @StateObject private var viewModel = SettingsViewModel()
     
     var body: some View {
         //toolbar
@@ -34,19 +34,19 @@ struct SettingsView: View {
             Section {
                 //user info section
                 HStack {
-                    Image(user.profileImageUrl ?? "")
+                    Image(viewModel.user.profileImageUrl ?? "")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 80, height: 80)
                         .clipShape(Circle())
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(user.fullname ?? "")
+                        Text(viewModel.user.fullname ?? "")
                             .font(.subheadline)
                             .fontWeight(.semibold)
                             .padding(.top, 4)
                         
-                        Text(user.email)
+                        Text(viewModel.user.email)
                             .font(.footnote)
                             .foregroundStyle(.gray)
                     }
