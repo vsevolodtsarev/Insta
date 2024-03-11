@@ -16,11 +16,7 @@ struct ProfileHeaderView: View {
             
             // Avatar and stats
             HStack {
-                Image(user.profileImageUrl ?? "")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 80)
-                    .clipShape(Circle())
+                CircularProfileImageView(user: user, size: .medium)
                 
                 HStack(spacing: 8) {
                     UserStatView(text: "Posts", count: .constant(1))
@@ -82,5 +78,5 @@ struct ProfileHeaderView: View {
 }
 
 #Preview {
-    ProfileHeaderView(user: User.MOCK_USERS[2])
+    ProfileHeaderView(user: User.MOCK_USERS[0])
 }
