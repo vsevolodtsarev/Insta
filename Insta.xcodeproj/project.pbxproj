@@ -42,6 +42,7 @@
 		139B631A2B9F5FC9007067BE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 139B63192B9F5FC9007067BE /* Kingfisher */; };
 		13A5006C2B9F60B300E79F4A /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5006B2B9F60B300E79F4A /* CircularProfileImageView.swift */; };
 		13A500722BA0304E00E79F4A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500712BA0304E00E79F4A /* FeedViewModel.swift */; };
+		13A500742BA03D1C00E79F4A /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500732BA03D1C00E79F4A /* PostService.swift */; };
 		13F2A1C72B86629F00164261 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1C62B86629F00164261 /* AddEmailView.swift */; };
 		13F2A1C92B866B1F00164261 /* CreateUsernameVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */; };
 		13F2A1CB2B86738500164261 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2A1CA2B86738500164261 /* CreatePasswordView.swift */; };
@@ -90,6 +91,7 @@
 		137BBA542B7F815F002B0EC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		13A5006B2B9F60B300E79F4A /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		13A500712BA0304E00E79F4A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		13A500732BA03D1C00E79F4A /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		13F2A1C62B86629F00164261 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		13F2A1C82B866B1F00164261 /* CreateUsernameVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameVIew.swift; sourceTree = "<group>"; };
 		13F2A1CA2B86738500164261 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				13FF4A9E2B9259DD00FFE7DE /* UserService.swift */,
 				13FF4AB22B98F10A00FFE7DE /* ImageUploader.swift */,
+				13A500732BA03D1C00E79F4A /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				132966092B89155F00B3A5D1 /* Post.swift in Sources */,
 				1308545A2B8CE37400DB135A /* RegistrationViewModel.swift in Sources */,
 				135151212B84AAF8001621A0 /* Constants.swift in Sources */,
+				13A500742BA03D1C00E79F4A /* PostService.swift in Sources */,
 				13FF4AB32B98F10A00FFE7DE /* ImageUploader.swift in Sources */,
 				13FF4AA52B939EE800FFE7DE /* AuthButtonView.swift in Sources */,
 				135151252B84B40B001621A0 /* ProfileView.swift in Sources */,
