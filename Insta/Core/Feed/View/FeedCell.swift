@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FeedCell: View {
     let post: Post
@@ -21,7 +22,6 @@ struct FeedCell: View {
                     Text(verbatim: user.username)
                         .font(.footnote)
                         .fontWeight(.semibold)
-                        .clipShape(Rectangle())
                 }
                 
                 Spacer()
@@ -29,10 +29,11 @@ struct FeedCell: View {
             .padding(.leading, 8)
             
             // Post image
-            Image(post.imageUrl)
+            KFImage(URL(string: post.imageUrl))
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
+                .clipShape(Rectangle())
             
             
             // Action buttons
