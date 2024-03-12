@@ -21,7 +21,6 @@ final class UploadPostViewModel: ObservableObject {
     func loadImage(fromItem item: PhotosPickerItem?) async {
         guard let item else { return }
         
-#warning("Error handling needs here later")
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
         guard let uiImage = UIImage(data: data) else { return }
         postImage = Image(uiImage: uiImage)
