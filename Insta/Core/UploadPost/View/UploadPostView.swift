@@ -43,10 +43,7 @@ struct UploadPostView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button(action: {
-                        caption = ""
-                        viewModel.postImage = nil
-                        viewModel.selectedImage = nil
-                        tabIndex = 0
+                        clearPostDataAndReturnToFeed()
                     }, label: {
                         SFSymbolsImage.cancelPost
                     })
@@ -54,13 +51,23 @@ struct UploadPostView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {
-                        print("upload")
+                        Task {
+                            try await viewModel.uploadPost(caption: caption)
+                            clearPostDataAndReturnToFeed()
+                        }
                     }, label: {
                         Text("Next")
                     })
                 }
             }
         }
+    }
+    
+    private func clearPostDataAndReturnToFeed() {
+        caption = ""
+        viewModel.postImage = nil
+        viewModel.selectedImage = nil
+        tabIndex = 0
     }
 }
 
